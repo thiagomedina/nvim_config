@@ -6,5 +6,4 @@ app.listen(config.portApi, () => {
     `Server started on port ${config.portApi}(${config.env})`
 });
 
-
 module.exports = app;
