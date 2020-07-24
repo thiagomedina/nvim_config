@@ -1,8 +1,15 @@
 @import "../../sass/variable.scss";
+@import "../../sass/mixins.scss";
 
 .background {
-  background-color: yellow;
+ //Properties for small screens
+ width: 100%;
+ background: red;
+
+ @include forLargeScreens(640) {
+   //Properties for large screens
+     width: 100%;
+     background: blue;
+ }
 }
-.teste {
-  color: red;
-}
+
