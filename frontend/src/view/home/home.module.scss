@@ -1,15 +1,16 @@
-@import "../../sass/variable.scss";
-@import "../../sass/mixins.scss";
+@import '../../sass/variable.scss';
+@import '../../sass/mixins.scss';
+@import '../../sass/reset.scss';
 
 .background {
  //Properties for small screens
+ 
  width: 100%;
- background: red;
-
+ background-image: url('../../assets/img/banner01.png');
+   
  @include forLargeScreens(640) {
    //Properties for large screens
-     width: 100%;
-     background: blue;
- }
+
+  background-image: url('../../assets/img/banner01.png'); }
 }
 
