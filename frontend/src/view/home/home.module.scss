@@ -1,16 +1,61 @@
-@import '../../sass/variable.scss';
-@import '../../sass/mixins.scss';
-@import '../../sass/reset.scss';
+@import "../../sass/variable.scss";
+@import "../../sass/mixins.scss";
 
 .background {
- //Properties for small screens
- 
- width: 100%;
- background-image: url('../../assets/img/banner01.png');
-   
- @include forLargeScreens(640) {
-   //Properties for large screens
+  //Properties for small screens
 
-  background-image: url('../../assets/img/banner01.png'); }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 667px;
+  background-image: url("../../assets/img/banner01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .container {
+    height: 50%;
+    margin: 1em;
+    color: white;
+  }
+
+  @include forLargeScreens(640) {
+    //Properties for large screens
+
+    background-image: url("../../assets/img/banner01.png");
+  }
 }
 
+.btn {
+  //Properties for small screens
+
+  box-shadow: inset 0px 34px 9px -15px $btnShadown;
+  background-color: $btn;
+  border-radius: 42px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 16px 68px;
+  text-decoration: none;
+  margin-top: 4em;
+
+  &:hover {
+    background-color: $btnShadown;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+
+  @include forLargeScreens(640) {
+    //Properties for large screens
+
+    color: black;
+  }
+}

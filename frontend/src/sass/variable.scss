@@ -1,11 +1,26 @@
-//imgs
-$imgHome:'../assets/img/banner01.png';
+//Image
+$imgHome: "../assets/img/banner01.png";
 
-
-//colors
+//Colors
 $background-color: #ddd0f8;
-$color-home: #7753f2;
-$secondary-color: #4642b1;
-$color5: #a085f2;
-$color4: #67407d;
-$color3: #d79cdb;
+$primary-color: #7733e5;
+$secondary-color: #9d75e9;
+$color5: #9d75e9;
+$color4: #cbb0f2;
+$btn: #f16766;
+$btnShadown: #fd8f9a;
+$color7: #64bcfc;
+
+//Font-Family
+$roboto: "Roboto", sans-serif;
+
+// Weights
+$hairline-weight: 100;
+$thin-weight: 200;
+$light-weight: 300;
+$normal-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
+$bold-weight: 700;
+$xbold-weight: 800;
+$black-weight: 900;
