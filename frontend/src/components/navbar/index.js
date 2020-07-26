@@ -1,7 +1,14 @@
 import React from "react";
+import {background} from './navbar.module.scss'
 
 const Navbar = () => {
-  return <h3>Navbar</h3>;
+  return(
+   <>
+   <div className={background}>
+     <p>navbar</p>
+   </div>
+   </>
+  ) 
 };
 
 export default Navbar;

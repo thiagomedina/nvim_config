@@ -1,0 +1,8 @@
+@import "../../sass/variable.scss";
+@import "../../sass/mixins.scss";
+
+.background{
+    background-color:$primary-color;
+    padding: 0.1em;
+    margin: 0;
+}

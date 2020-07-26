@@ -27,12 +27,17 @@
     background-image: url("../../assets/img/banner01.png");
     align-items: flex-start;
 
-    .container{
-      width: 50%;
-    }
+    .container {
+      width: 45%;
+      h2{
+        font-size: 35px;
+        font-weight: $black-weight;
 
+      }
+    }
   }
 }
+
 
 .btn {
   //Properties for small screens
@@ -53,24 +58,25 @@
   bottom: -20em;
 
   @keyframes slide-in {
-    100% { bottom:6em }
+    100% {
+      bottom: 6em;
+    }
   }
 
   &:hover {
     background-color: $btnShadown;
   }
 
-
-  @include forLargeScreens(768) {
+  @include forLargeScreens(640) {
     //Properties for large screens
 
-    color:white;
-    margin: 10px;
     left: -20em;
     bottom: 5em;
 
     @keyframes slide-in {
-      100% { left:1rem }
+      100% {
+        left: 1rem;
+      }
     }
   }
 }
