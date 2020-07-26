@@ -16,7 +16,7 @@
   background-position: center;
 
   .container {
-    height: 50%;
+    height: 40%;
     margin: 1em;
     color: white;
   }
@@ -25,6 +25,12 @@
     //Properties for large screens
 
     background-image: url("../../assets/img/banner01.png");
+    align-items: flex-start;
+
+    .container{
+      width: 50%;
+    }
+
   }
 }
 
@@ -38,24 +44,33 @@
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 16px 68px;
+  font-weight: $bold-weight;
+  font-size: 1.2em;
+  padding: 16px 45px;
   text-decoration: none;
-  margin-top: 4em;
+  animation: slide-in 1.5s forwards;
+  position: absolute;
+  bottom: -20em;
+
+  @keyframes slide-in {
+    100% { bottom:6em }
+  }
 
   &:hover {
     background-color: $btnShadown;
   }
 
-  &:active {
-    position: relative;
-    top: 1px;
-  }
 
-  @include forLargeScreens(640) {
+  @include forLargeScreens(768) {
     //Properties for large screens
 
-    color: black;
+    color:white;
+    margin: 10px;
+    left: -20em;
+    bottom: 5em;
+
+    @keyframes slide-in {
+      100% { left:1rem }
+    }
   }
 }

@@ -12,10 +12,9 @@ const Home = () => {
             Escrever seletores assim é um tiro no pé. O CSS fica ruim de
             entender e o trabalho de cascata do CSS – que é o que faz o CSS tão
             especial – pode se perder, já que você vai precisar fazer um outro
-          
-          s</p>
-          <button className={btn}>começar</button>
+          </p>
         </div>
+        <button className={btn}>Criar Meu Currículo</button>
       </div>
     </>
   );
