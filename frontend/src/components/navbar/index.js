@@ -4,9 +4,9 @@ import {background} from './navbar.module.scss'
 const Navbar = () => {
   return(
    <>
-   <div className={background}>
+   <nav className={background}>
      <p>navbar</p>
-   </div>
+   </nav>
    </>
   ) 
 };
