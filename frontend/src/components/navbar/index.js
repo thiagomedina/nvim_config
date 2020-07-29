@@ -5,7 +5,8 @@ const Navbar = () => {
   return(
    <>
    <nav className={background}>
-     <p>navbar</p>
+     <a><i className="fa fa-bars"></i></a>
+
    </nav>
    </>
   ) 
