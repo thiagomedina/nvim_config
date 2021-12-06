@@ -1,10 +1,6 @@
 call plug#begin()
 Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'joshdick/onedark.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
@@ -31,7 +27,7 @@ colorscheme onedark
 "fzf file
 " source ./configs/fzf.vim
 
-
+let NERDTreeShowHidden=1
 "popUp suggestion
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
