@@ -11,9 +11,13 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup({
 	debug = false,
 	sources = {
-		formatting.prettier,
+		formatting.prettier.with({extra_args = {'--print-width=120'}}),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
-    -- diagnostics.flake8
+    formatting.lua_format.with({
+      extra_args = {
+        '--column-limit=120'
+      }
+    })
 	},
 })
