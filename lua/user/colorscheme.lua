@@ -1,12 +1,12 @@
-local catppuccin = require("catppuccin")
-catppuccin.setup({
-transparent_background = true,
-integration = {
-  nvimtree = {
-	  transparent_panel = false, 
-  }
- }
-})
+-- local catppuccin = require("catppuccin")
+-- catppuccin.setup({
+-- transparent_background = true,
+-- integration = {
+--   nvimtree = {
+-- 	  transparent_panel = false, 
+--   }
+--  }
+-- })
 
 vim.cmd [[
 try
