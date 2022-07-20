@@ -10,7 +10,7 @@
 
 vim.cmd [[
 try
-  colorschem catppuccin 
+  colorschem gruvbox-material 
 " hi Normal guibg=NONE ctermbg=NONE
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
