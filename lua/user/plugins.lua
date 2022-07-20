@@ -63,7 +63,7 @@ return packer.startup(function(use)
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-   -- use "morhetz/gruvbox"
+  -- use "morhetz/gruvbox"
   -- use "folke/tokyonight.nvim"
   use "catppuccin/nvim"
 
@@ -87,7 +87,11 @@ return packer.startup(function(use)
   use "tpope/vim-commentary"
 
   -- Telescope
-  use "nvim-telescope/telescope.nvim"
+  -- use "nvim-telescope/telescope.nvim"
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
 
   -- Treesitter
   -- use {
