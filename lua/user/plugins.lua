@@ -88,17 +88,31 @@ return packer.startup(function(use)
   use "tpope/vim-commentary"
 
   -- Telescope
-  -- use "nvim-telescope/telescope.nvim"
-  use {
-    'nvim-telescope/telescope.nvim',
-    requires = { { 'nvim-lua/plenary.nvim' } }
-  }
-
-  -- Treesitter
   -- use {
-  --   "nvim-treesitter/nvim-treesitter",
-  --   run = ":TSUpdate",
+  --   'nvim-telescope/telescope.nvim',
+  --   requires = { { 'nvim-lua/plenary.nvim' } }
   -- }
+  use "nvim-telescope/telescope.nvim"
+  use "tom-anders/telescope-vim-bookmarks.nvim"
+  use "nvim-telescope/telescope-media-files.nvim"
+  use "nvim-telescope/telescope-ui-select.nvim"
+  use "nvim-telescope/telescope-file-browser.nvim"
+
+  --EditorConfig
+  use "editorconfig/editorconfig-vim"
+
+ -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use "JoosepAlviste/nvim-ts-context-commentstring"
+  use { "p00f/nvim-ts-rainbow" }
+  use "nvim-treesitter/playground"
+  use "windwp/nvim-ts-autotag"
+  use "romgrk/nvim-treesitter-context"
+  use "mizlan/iswap.nvim"
+
   -- use "JoosepAlviste/nvim-ts-context-commentstring"
 
   -- Git
