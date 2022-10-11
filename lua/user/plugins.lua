@@ -114,6 +114,10 @@ return packer.startup(function(use)
   use "mizlan/iswap.nvim"
 
   -- use "JoosepAlviste/nvim-ts-context-commentstring"
+--MULTICURSOR
+
+  use "mg979/vim-visual-multi"
+
 
   -- Git
   use "lewis6991/gitsigns.nvim"
