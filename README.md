@@ -1,0 +1,1 @@
+install: grep, fzf, rg 
