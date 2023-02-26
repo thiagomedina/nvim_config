@@ -47,13 +47,13 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
-use {
-  'nvim-tree/nvim-tree.lua',
-  requires = {
-    'nvim-tree/nvim-web-devicons', -- optional, for file icons
-  },
-  tag = 'nightly'
-}
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly'
+  }
 
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
@@ -67,61 +67,60 @@ use {
   use "folke/which-key.nvim"
   use "tomlion/vim-solidity"
   use "mg979/vim-visual-multi"
+  use {
+    "prettier/vim-prettier",
+    run = "yarn install",
+    ft = { 'javascript', 'typescript' }
+  }
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   -- use "morhetz/gruvbox"
   -- use "folke/tokyonight.nvim"
   use "catppuccin/nvim"
-  -- use "sainnhe/gruvbox-material"
+  use "sainnhe/gruvbox-material"
 
   -- cmp plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp"
+  -- use "hrsh7th/nvim-cmp" -- The completion plugin
+  -- use "hrsh7th/cmp-buffer" -- buffer completions
+  -- use "hrsh7th/cmp-path" -- path completions
+  -- use "hrsh7th/cmp-cmdline" -- cmdline completions
+  -- use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  -- use "hrsh7th/cmp-nvim-lsp"
 
   -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  -- use "L3MON4D3/LuaSnip" --snippet engine
+  -- use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
-  -- LSP
-  -- use "neovim/nvim-lspconfig" -- enable LSP
-  -- use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  -- use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-  -- use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "tpope/vim-commentary"
 
-use {
-  'VonHeikemen/lsp-zero.nvim',
-  requires = {
-    -- LSP Support
-    {'neovim/nvim-lspconfig'},
-    {'williamboman/mason.nvim'},
-    {'williamboman/mason-lspconfig.nvim'},
 
-    -- Autocompletion
-    {'hrsh7th/nvim-cmp'},
-    {'hrsh7th/cmp-buffer'},
-    {'hrsh7th/cmp-path'},
-    {'saadparwaiz1/cmp_luasnip'},
-    {'hrsh7th/cmp-nvim-lsp'},
-    {'hrsh7th/cmp-nvim-lua'},
+  -- LSP
+  use {
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v1.x',
+    requires = {
+      -- LSP Support
+      { 'neovim/nvim-lspconfig' }, -- Required
+      { 'williamboman/mason.nvim' }, -- Optional
+      { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
-    -- Snippets
-    {'L3MON4D3/LuaSnip'},
-    {'rafamadriz/friendly-snippets'},
+      -- Autocompletion
+      { 'hrsh7th/nvim-cmp' }, -- Required
+      { 'hrsh7th/cmp-nvim-lsp' }, -- Required
+      { 'hrsh7th/cmp-buffer' }, -- Optional
+      { 'hrsh7th/cmp-path' }, -- Optional
+      { 'saadparwaiz1/cmp_luasnip' }, -- Optional
+      { 'hrsh7th/cmp-nvim-lua' }, -- Optional
+
+      -- Snippets
+      { 'L3MON4D3/LuaSnip' }, -- Required
+      { 'rafamadriz/friendly-snippets' }, -- Optional
+    }
   }
-}
   -- Telescope
-  -- use {
-  --   'nvim-telescope/telescope.nvim',
-  --   requires = { { 'nvim-lua/plenary.nvim' } }
-  -- }
   use "nvim-telescope/telescope.nvim"
-  use "tom-anders/telescope-vim-bookmarks.nvim"
+  -- use "tom-anders/telescope-vim-bookmarks.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
   use "nvim-telescope/telescope-ui-select.nvim"
   use "nvim-telescope/telescope-file-browser.nvim"
@@ -129,7 +128,7 @@ use {
   --EditorConfig
   use "editorconfig/editorconfig-vim"
 
- -- Treesitter
+  -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
@@ -142,8 +141,7 @@ use {
   use "mizlan/iswap.nvim"
 
   -- use "JoosepAlviste/nvim-ts-context-commentstring"
---MULTICURSOR
-
+  --MULTICURSOR
   use "mg979/vim-visual-multi"
 
 
