@@ -26,6 +26,10 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 -- Formatting
 keymap("n", "<C-i>", ":lua vim.lsp.buf.formatting_sync()<CR>", opts)
+
+--prettier
+
+keymap("n", "<C-i>", ":Prettier<CR>", opts)
 -- Added quotes
 keymap("n", '"', 'ciw""<ESC>P', opts)
 keymap("n", "'", "ciw''<ESC>P", opts)
@@ -73,4 +77,3 @@ keymap("n", "<Leader>r", ":%s///g<Left><Left>", opts)
 -- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
