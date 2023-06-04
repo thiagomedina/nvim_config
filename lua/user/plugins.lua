@@ -75,7 +75,7 @@ return packer.startup(function(use)
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "morhetz/gruvbox"
+  -- use "morhetz/gruvbox"
   -- use "folke/tokyonight.nvim"
   -- use "catppuccin/nvim"
   use "sainnhe/gruvbox-material"
