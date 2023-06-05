@@ -65,7 +65,7 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
-  use "tomlion/vim-solidity"
+  -- use "tomlion/vim-solidity"
   use "mg979/vim-visual-multi"
   use {
     "prettier/vim-prettier",
