@@ -66,7 +66,7 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   -- use "tomlion/vim-solidity"
-  use "mg979/vim-visual-multi"
+  -- use "mg979/vim-visual-multi"
   use {
     "prettier/vim-prettier",
     run = "yarn install",
@@ -134,10 +134,10 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
-  use { "p00f/nvim-ts-rainbow" }
-  use "nvim-treesitter/playground"
+  -- use { "p00f/nvim-ts-rainbow" }
+  -- use "nvim-treesitter/playground"
   use "windwp/nvim-ts-autotag"
-  use "romgrk/nvim-treesitter-context"
+  -- use "romgrk/nvim-treesitter-context"
   use "mizlan/iswap.nvim"
 
   -- use "JoosepAlviste/nvim-ts-context-commentstring"
