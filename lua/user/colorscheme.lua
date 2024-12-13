@@ -8,8 +8,15 @@ try
   let g:gruvbox_material_background = 'hard'
   let g:gruvbox_material_foreground = 'material'
   colorscheme gruvbox-material
-  " uncomment this for a transparent background
-  " hi Normal guibg=NONE ctermbg=NONE
+  " uncomment for a transparent background
+  hi Normal guibg=NONE ctermbg=NONE
+  hi Normal guibg=NONE ctermbg=NONE
+  hi NormalNC guibg=NONE ctermbg=NONE
+  hi NvimTreeNormal guibg=NONE ctermbg=NONE
+  hi NvimTreeEndOfBuffer guibg=NONE ctermbg=NONE
+  hi TelescopeNormal guibg=NONE ctermbg=NONE
+  hi TelescopeBorder guibg=NONE ctermbg=NONE
+  hi EndOfBuffer guibg=NONE ctermbg=NONE
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark

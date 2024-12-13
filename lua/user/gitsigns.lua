@@ -27,7 +27,7 @@ gitsigns.setup {
     delay = 1000,
     ignore_whitespace = false,
   },
-  -- Remove or comment out current_line_blame_formatter_opts if it’s causing issues
+  --  current_line_blame_formatter_opts it’s causing issues
   -- current_line_blame_formatter_opts = {
   --   relative_time = false,
   -- },
@@ -36,7 +36,7 @@ gitsigns.setup {
   status_formatter = nil, -- Use default
   max_file_length = 40000,
   preview_config = {
-    -- Options passed to nvim_open_win
+    -- options passed to nvim_open_win
     border = "single",
     style = "minimal",
     relative = "cursor",
