@@ -13,7 +13,69 @@ local lsp = require('lsp-zero').preset({
 
 lsp.ensure_installed({
   'tsserver',
-  'eslint'
+  'eslint',
+  'intelephense',
+})
+
+
+require('lspconfig').intelephense.setup({
+  root_dir = require('lspconfig').util.root_pattern("composer.json", ".git"),
+  settings = {
+    intelephense = {
+      environment = {
+      },
+      files = {
+        maxSize = 5000000,
+      },
+      -- Add formatting settings
+      format = {
+        enable = true,
+        braces = "psr12",
+
+        -- Project-specific formatting rules
+        insertSpaces = true,
+        tabSize = 4,
+
+        -- Alignment rules matching Project.xml
+        alignMultiLineCall = true,
+        alignMultiLineParameters = false,
+        alignMultiLineParametersInCalls = true,
+        alignMultiLineExtends = true,
+        alignGroupFieldDeclarations = true,
+
+        -- Wrapping rules
+        wrapLineLength = 200,
+        wrapParameters = "force-aligned",
+        wrapParametersLparen = true,
+        wrapParametersRparen = true,
+        wrapArrayInitializerLbrace = true,
+        wrapArrayInitializerRbrace = true,
+
+        -- Spacing rules
+        spaceAfterTypeCast = true,
+        spaceAroundOperators = true,
+        spaceBeforeParentheses = false,
+        spaceAroundComma = true,
+        spaceBeforeClassBraces = true,
+
+        -- Blank lines
+        blankLinesBeforeRbrace = 0,
+        blankLinesAfterPackage = 1,
+
+        -- Force braces
+        forceBraces = "always",
+
+        -- Array formatting
+        arrayInitializerStyle = "aligned",
+
+        -- Binary operations
+        binaryOperatorStyle = "next-line",
+
+        -- Ternary operations
+        ternaryOperatorStyle = "next-line",
+      }
+    }
+  }
 })
 
 lsp.on_attach(function(client, bufnr)
