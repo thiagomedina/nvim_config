@@ -69,7 +69,7 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 --replace
-keymap("n", "<Leader>r", ":%s///g<Left><Left>", opts)
+keymap("n", "<Leader>R", ":%s///g<Left><Left>", opts)
 
 -- Terminal --
 -- Better terminal navigation

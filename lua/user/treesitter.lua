@@ -13,30 +13,14 @@ configs.setup({
     -- use_languagetree = true,
     enable = true,               -- false will disable the whole extension
     disable = { "css", "html" }, -- list of language that will be disabled
-    additional_vim_regex_highlighting = true,
+    additional_vim_regex_highlighting = false,
   },
   autopairs = {
     enable = true,
   },
   indent = { enable = true, disable = { "css", "html" } },
-  -- context_commentstring = {
-  --   enable = true,
-  --   enable_autocmd = false,
-  -- },
   autotag = {
     enable = true,
     disable = { "xml" },
-  },
-  rainbow = {
-    enable = true,
-    colors = {
-      "Gold",
-      "Orchid",
-      "DodgerBlue",
-    },
-    disable = { "html" },
-  },
-  playground = {
-    enable = true,
   },
 })
